@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: "Inter", sans-serif;
+	background-color: white;
+	line-height: 1.3em;
+}
+
+header {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 500;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	background-color: white;
+}
+
+#appTitle {
+	color: #3730a3;
+	padding-bottom: 1rem;
+}
+
+#appTitle #appTitleContainer {
+	margin: 0 auto;
+	width: 185px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#appIntro {
+	color: #818cf8;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+	font-weight: 400;
+}
+
+.textDiv {
+	margin: 0 auto;
+}
+
+#textDivTitle {
+	font-size: 14px;
+	color: #374151;
+	background-color: white;
+}
+
+#regSpan {
+	font-weight: 500;
+}
+
+#resetSpan {
+	float: right;
+	font-size: 12px;
+	color: #1d4ed8;
+	cursor: pointer;
+}
+
+/* #txtAreaDiv {
+	margin: 0 auto;
+} */
+
+#txtArea {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+	color: #585d68;
+	line-height: 1.3em;
+	resize: none;
+	outline: none;
+	border: 1px #d1d5db solid;
+	border-radius: 4px;
+	padding: 0.8em;
+}
+
+.resultsDiv {
+	margin: 0 auto;
+}
+
+#resultsDivTitle {
+	font-size: 14px;
+	color: #374151;
+	padding-bottom: 12px;
+	padding-top: 11px;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	font-weight: 500;
+}
+
+#resultsDivTitle span {
+	float: right;
+	color: #9ca3af;
+	font-weight: 400;
+	padding-right: 7px;
+}
+
+table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#rangesTable {
+	width: 100%;
+}
+
+#rangesTable th {
+	font-size: 16px;
+	font-weight: 500;
+	color: #5b21b6;
+	text-align: left;
+	padding: 0.75em;
+	background-color: #ede9fe;
+	position: sticky;
+	top: 39px;
+	width: 50%;
+}
+
+#rangesTable th:first-child {
+	border-radius: 4px 0 0 4px;
+}
+
+#rangesTable th:last-child {
+	border-radius: 0 4px 4px 0;
+}
+
+#rangesTable td {
+	font-size: 14px;
+	font-weight: 400;
+	color: #6b7280;
+	padding: 0.8em;
+	border-bottom: 1px solid #dfdfdf;
+	width: 50%;
+}
+
+@media only screen and (max-width: 425px) {
+	header {
+		width: 94%;
+		max-width: 353px;
+	}
+
+	#textDivTitle {
+		margin-bottom: 0.5em;
+	}
+
+	#txtArea {
+		height: 30%;
+	}
+
+	.textDiv,
+	.resultsDiv {
+		width: 94%;
+		max-width: 375px;
+	}
+
+	.resultsDiv {
+		margin-top: 1rem;
+		margin-bottom: 4rem;
+	}
+
+	#resultsDivTitle {
+		top: 0;
+	}
+
+	#tableArea {
+		padding-bottom: 5rem;
+	}
+
+	#rangesTable th {
+		top: 39px;
+	}
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+	header {
+		width: 94%;
+		max-width: 353px;
+	}
+
+	#textDivTitle {
+		margin-bottom: 0.5em;
+	}
+
+	#txtArea {
+		height: 30%;
+	}
+
+	.textDiv,
+	.resultsDiv {
+		width: 90%;
+		max-width: 560px;
+	}
+
+	.resultsDiv {
+		margin-top: 1rem;
+		margin-bottom: 4rem;
+	}
+
+	#resultsDivTitle {
+		top: 0;
+	}
+
+	#tableArea {
+		padding-bottom: 5rem;
+	}
+
+	#rangesTable th {
+		top: 39px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.outestContainer {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background-color: white;
+	}
+
+	#headerDiv {
+		background-color: white;
+		position: sticky;
+		top: 0;
+	}
+
+	header {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		width: 426px;
+		position: sticky;
+		top: 0;
+	}
+
+	.txtResContainer {
+		margin: 0 auto;
+		flex: 1;
+		display: flex;
+		width: 100%;
+		max-width: 1100px;
+	}
+
+	.textDiv,
+	.resultsDiv {
+		width: 50%;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Control the left side */
+	.textDiv {
+		padding-right: 1rem;
+		padding-top: 0;
+	}
+
+	/* Control the right side */
+	.resultsDiv {
+		padding-left: 1rem;
+		padding-top: 0;
+	}
+
+	#textDivTitle {
+		margin-bottom: 11px;
+		padding-top: 11px;
+		position: sticky;
+		top: 136.391px;
+	}
+
+	#txtArea {
+		height: calc(100% - 2rem);
+		max-height: calc(100% - 2rem);
+		position: sticky;
+		top: 175.391px;
+		flex: 1;
+	}
+
+	#tableDiv {
+		height: calc(100% - 2rem);
+		max-height: calc(100% - 2rem);
+		flex: 1;
+		position: relative;
+	}
+
+	#tableArea {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		padding: 0px;
+		overflow-y: scroll;
+	}
+
+	#resultsDivTitle {
+		top: 136.391px;
+	}
+
+	#rangesTable th {
+		top: 0px;
+	}
+}
+
+/* mark {
+	background: linear-gradient(120deg, #a8c6ff 0%, #a8c6ff 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 20%;
+	background-position: 0 90%;
+	color: black;
+} */
+
+/* #invalidMark {
+	background: linear-gradient(120deg, #e4a0a1 0%, #e4a0a1 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 20%;
+	background-position: 0 90%;
+	color: black;
+} */
