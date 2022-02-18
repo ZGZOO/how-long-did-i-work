@@ -589,7 +589,8 @@ function formatMilliseconds(milliseconds) {
     let hours = (milliseconds / 3600000).toFixed(2);
     // hours = hours < 10 ? "0" + hours : hours;
     // minutes = minutes < 10 ? "0" + minutes : minutes;
-    let strHour = hours > 1 ? "Hours" : "Hour";
+    // let strHour = hours > 1 ? "Hours" : "Hour";
+    let strHour = "Hours";
     return hours + " " + strHour;
 }
 function addRows(tableID, tableObjsArr) {
