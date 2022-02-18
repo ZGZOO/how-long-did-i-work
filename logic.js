@@ -172,7 +172,8 @@ function formatMilliseconds(milliseconds) {
 	// hours = hours < 10 ? "0" + hours : hours;
 	// minutes = minutes < 10 ? "0" + minutes : minutes;
 
-	let strHour = hours > 1 ? "Hours" : "Hour";
+	// let strHour = hours > 1 ? "Hours" : "Hour";
+	let strHour = "Hours";
 	return hours + " " + strHour;
 }
 
