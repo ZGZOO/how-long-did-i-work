@@ -8,9 +8,9 @@ A handy time range calculator that I built which takes in plain text and parses 
 
 ### Purpose:
 
-- Instantly parse plain text into structured timesheet data.
-- Enable freelancers to easily log and bill the hours worked.
-- Create a smoother and more efficient workflow.
+- Instantly parse plain text into structured timesheet data
+- Enable freelancers to easily log and bill the hours worked
+- Create a smoother and more efficient workflow
 
 ### Tools used:
 
